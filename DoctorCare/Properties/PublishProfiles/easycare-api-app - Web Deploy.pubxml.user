@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA19QWN+CO5keAduKC/C3aiwAAAAACAAAAAAAQZgAAAAEAACAAAAAQevr9ReaO7/XdbRHvTfmAibrSMxWXM3bwQYsH45eptgAAAAAOgAAAAAIAACAAAACY+O6/mb37+bC3dUuVXTyQDa6eiHUci8x85w96YRoHJYAAAADzgGNyE9cQwJsGpE6Br6CB3pDgSw/A+nbiDYWuGAA7tFhxD9sghE+eBdBcQlotPdWaU9pUckYLHNHBLahegSi5p3k9t6AL0aDdenBgeDyHckxJBx9bL01i2smi1mPPC+fW34cDos8OocC8cZvL4jSuzjaHeCrdzmXQg4hpbe9IYUAAAADiP7vAHRK9CdT9ocWCKK0ocXp9GmqTMCHcRNZ5+XIHQivzRCBjC396OCu0MTeN1hwScRLQhWO212Iq2uoNIkrU</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="DoctorCare.Entities.DoctorCareApiContext">
+      <Value>Server=tcp:easycare-server.database.windows.net,1433%3bInitial Catalog=easycaredb%3bPersist Security Info=False%3bUser ID=easycare-server%3bPassword=admin%40123%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

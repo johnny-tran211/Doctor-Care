@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\EFSQLScripts\DoctorCare.Entities.DoctorCareApiContext.sql" />
+</sitemanifest>
