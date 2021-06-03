@@ -10,6 +10,8 @@ C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\Fluen
 C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\FluentValidation.AspNetCore.dll
 C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\Microsoft.Data.SqlClient.dll
 C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
 C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -23,6 +25,8 @@ C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\Micro
 C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
 C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.dll
+C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\Newtonsoft.Json.Bson.dll
 C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\dhoan\Desktop\DoctorCare\DoctorCare\obj\Release\net5.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

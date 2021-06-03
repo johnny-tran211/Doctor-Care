@@ -13,7 +13,10 @@ namespace DoctorCare.Authorization
         protected override Task HandleRequirementAsync(AuthorizationHandlerContext context, AppointmentAllowedRequirement requirement, Appointment resource)
         {
             var userExist = context.User.FindFirst(u => u.Type == ClaimTypes.NameIdentifier).Value;
-            if (int.Parse(userExist) == resource.DoctorId || int.Parse(userExist) == resource.PatientId) 
+            if (int.Parse(userExist) == resource.DoctorId && requirement.OnlyDoctor) {
+                context.Succeed(requirement);
+            }
+            else if (!requirement.OnlyDoctor && (int.Parse(userExist) == resource.DoctorId || int.Parse(userExist) == resource.PatientId))
             {
                 context.Succeed(requirement);
             }

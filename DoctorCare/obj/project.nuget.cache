@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5MskMwVuq+cjebQc9J5tDcHIHfE6Fbw5ALXzAr47V+9aCHqkUNkDdxbsRWQiipE5JnHsNP+UHzvPUO6rv8h8Og==",
+  "dgSpecHash": "7DEY6xU8Z48oi8TzVb9FtFC/gIIvaiRMWd0Skh3Dbu4ObFDXKTgPkY97qRpbj97fc4W4prjBHyW74mFNM9aL1A==",
   "success": true,
   "projectFilePath": "C:\\Users\\dhoan\\Desktop\\DoctorCare\\DoctorCare\\DoctorCare.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,8 @@
     "C:\\Users\\dhoan\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.0.4\\fluentvalidation.dependencyinjectionextensions.10.0.4.nupkg.sha512",
     "C:\\Users\\dhoan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\dhoan\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.5\\microsoft.aspnetcore.authentication.jwtbearer.5.0.5.nupkg.sha512",
+    "C:\\Users\\dhoan\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.6\\microsoft.aspnetcore.jsonpatch.5.0.6.nupkg.sha512",
+    "C:\\Users\\dhoan\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.6\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.6.nupkg.sha512",
     "C:\\Users\\dhoan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\dhoan\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\dhoan\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
@@ -42,6 +44,8 @@
     "C:\\Users\\dhoan\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\dhoan\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\dhoan\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\dhoan\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\dhoan\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\dhoan\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\dhoan\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\dhoan\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

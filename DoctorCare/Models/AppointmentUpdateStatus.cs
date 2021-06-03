@@ -10,5 +10,6 @@ namespace DoctorCare.Models
         public int Id { get; set; }
         public string Feedback { get; set; }
         public int DoctorId { get; set; }
+        public bool IsCancel { get; set; } = false;
     }
 }

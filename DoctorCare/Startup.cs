@@ -39,7 +39,8 @@ namespace DoctorCare
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers().AddFluentValidation();
+            services.AddControllers().AddFluentValidation().AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
             services.AddDbContext<DoctorCareApiContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 

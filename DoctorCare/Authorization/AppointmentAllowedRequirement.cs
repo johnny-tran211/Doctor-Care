@@ -8,5 +8,10 @@ namespace DoctorCare.Authorization
 {
     public class AppointmentAllowedRequirement : IAuthorizationRequirement
     {
+        public bool OnlyDoctor { get; }
+        public AppointmentAllowedRequirement(bool onlyDoctor)
+        {
+            OnlyDoctor = onlyDoctor;
+        }
     }
 }

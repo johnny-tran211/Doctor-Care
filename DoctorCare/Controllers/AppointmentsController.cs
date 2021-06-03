@@ -88,7 +88,7 @@ namespace DoctorCare.Controllers
             return Ok(appointmentDtos);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{appointmentId}")]
         public async Task<IActionResult> GetDetail(int appointmentId) 
         {
             var appointment = await _context.Appointments
@@ -102,7 +102,7 @@ namespace DoctorCare.Controllers
                 return NotFound();
             }
 
-            var authorizationResult = _authorizationService.AuthorizeAsync(User, appointment, new AppointmentAllowedRequirement()).Result;
+            var authorizationResult = _authorizationService.AuthorizeAsync(User, appointment, new AppointmentAllowedRequirement(false)).Result;
             if (!authorizationResult.Succeeded)
             {
                 return Forbid();
@@ -114,7 +114,6 @@ namespace DoctorCare.Controllers
         }
 
         [HttpPut("UpdateStatus/{appointmentId}")]
-        [Authorize(Roles = "Doctor")]
         public async Task<IActionResult> Put(int appointmentId, [FromBody] AppointmentUpdateStatus appointmentDto) 
         {
             if (!ModelState.IsValid)
@@ -126,17 +125,34 @@ namespace DoctorCare.Controllers
             {
                 return NotFound();
             }
-            if (appointment.StatusId == (int)StatusEnum.Cancel) 
-            {
-                return BadRequest("Cannot update cancel status");
-            }
-            appointment.StatusId += 1;
 
-            if (appointment.StatusId == (int)StatusEnum.Done) 
+            if (appointmentDto.IsCancel)
             {
-                appointment.Feedback = appointmentDto.Feedback;
+                var authorizationBothRolesResult = _authorizationService.AuthorizeAsync(User, appointment, new AppointmentAllowedRequirement(false)).Result;
+                if (!authorizationBothRolesResult.Succeeded)
+                {
+                    return Forbid();
+                }
+                appointment.StatusId = (int)StatusEnum.Cancel;
             }
+            else 
+            {          
+                var authorizationDoctorResult = _authorizationService.AuthorizeAsync(User, appointment, new AppointmentAllowedRequirement(true)).Result;
+                if (!authorizationDoctorResult.Succeeded) 
+                {
+                    return Forbid();
+                }
+                if (appointment.StatusId == (int)StatusEnum.Done || appointment.StatusId == (int)StatusEnum.Cancel)
+                {
+                    return BadRequest("Appointment have been done or canceled. Cannot update status !!!");
+                }
+                appointment.StatusId += 1;
 
+                if (appointment.StatusId == (int)StatusEnum.Done) 
+                {
+                    appointment.Feedback = appointmentDto.Feedback;
+                }
+            }
             await _context.SaveChangesAsync();
             return Ok();
         }
